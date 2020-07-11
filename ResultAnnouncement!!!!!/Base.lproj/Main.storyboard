@@ -19,41 +19,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ac-I3-crb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ear-wl-4S1">
-                                                <rect key="frame" x="40" y="328" width="334" height="60"/>
+                                                <rect key="frame" x="40" y="418" width="334" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="dfm-4e-cWe"/>
                                                 </constraints>
                                                 <state key="normal" title="対戦する"/>
+                                                <connections>
+                                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXU-Ar-Sp3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="ear-wl-4S1" firstAttribute="leading" secondItem="5Ac-I3-crb" secondAttribute="leading" constant="40" id="3IL-x5-dBz"/>
-                                            <constraint firstAttribute="bottom" secondItem="ear-wl-4S1" secondAttribute="bottom" constant="60" id="B8X-dD-rei"/>
+                                            <constraint firstItem="ear-wl-4S1" firstAttribute="centerY" secondItem="5Ac-I3-crb" secondAttribute="centerY" id="SyU-az-jA4"/>
                                             <constraint firstAttribute="trailing" secondItem="ear-wl-4S1" secondAttribute="trailing" constant="40" id="iL2-4n-gmg"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lR3-2F-QcB">
-                                        <rect key="frame" x="0.0" y="448" width="414" height="448"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzK-09-LhM">
-                                                <rect key="frame" x="40" y="60" width="334" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="7pA-Wi-T5M"/>
-                                                </constraints>
-                                                <state key="normal" title="アプリを終了する"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="vzK-09-LhM" firstAttribute="leading" secondItem="lR3-2F-QcB" secondAttribute="leading" constant="40" id="kBm-zp-J4R"/>
-                                            <constraint firstAttribute="trailing" secondItem="vzK-09-LhM" secondAttribute="trailing" constant="40" id="nvz-xl-jvo"/>
-                                            <constraint firstItem="vzK-09-LhM" firstAttribute="top" secondItem="lR3-2F-QcB" secondAttribute="top" constant="60" id="t4o-Ce-xcS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -68,6 +52,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="jG0-DA-Apf" kind="presentation" identifier="ruleSetting" modalPresentationStyle="fullScreen" id="aaq-4C-RZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,6 +186,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vbr-3c-14Q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tfy-5X-7fC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeo-ma-QlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

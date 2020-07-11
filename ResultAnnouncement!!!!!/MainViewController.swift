@@ -9,12 +9,13 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func playButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ruleSetting", sender: self)
+    }
 }
 
