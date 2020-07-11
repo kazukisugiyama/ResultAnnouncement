@@ -16,6 +16,7 @@
 		B74812B424BA1FD500D89F45 /* RuleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74812B324BA1FD500D89F45 /* RuleSettingViewController.swift */; };
 		B74812B624BA202C00D89F45 /* AnnounceResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74812B524BA202C00D89F45 /* AnnounceResultsViewController.swift */; };
 		B74812B824BA204900D89F45 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74812B724BA204900D89F45 /* ResultViewController.swift */; };
+		B74812BA24BA441A00D89F45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74812B924BA441A00D89F45 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B74812B324BA1FD500D89F45 /* RuleSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSettingViewController.swift; sourceTree = "<group>"; };
 		B74812B524BA202C00D89F45 /* AnnounceResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceResultsViewController.swift; sourceTree = "<group>"; };
 		B74812B724BA204900D89F45 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B74812B924BA441A00D89F45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				B74812B324BA1FD500D89F45 /* RuleSettingViewController.swift */,
 				B74812B524BA202C00D89F45 /* AnnounceResultsViewController.swift */,
 				B74812B724BA204900D89F45 /* ResultViewController.swift */,
+				B74812B924BA441A00D89F45 /* RegistrationViewController.swift */,
 				B7285EE924B8E697003D98D5 /* Main.storyboard */,
 				B7285EEC24B8E698003D98D5 /* Assets.xcassets */,
 				B7285EEE24B8E698003D98D5 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				B7285EE424B8E697003D98D5 /* AppDelegate.swift in Sources */,
 				B74812B624BA202C00D89F45 /* AnnounceResultsViewController.swift in Sources */,
 				B7285EE624B8E697003D98D5 /* SceneDelegate.swift in Sources */,
+				B74812BA24BA441A00D89F45 /* RegistrationViewController.swift in Sources */,
 				B74812B424BA1FD500D89F45 /* RuleSettingViewController.swift in Sources */,
 				B74812B824BA204900D89F45 /* ResultViewController.swift in Sources */,
 			);
