@@ -28,10 +28,19 @@ class MainViewController: UIViewController {
         
         alertLabel.isHidden = true
         
-        
+        do {
+            // 要確認
+            let uid = try Auth.auth().getStoredUser(forAccessGroup: "friend").uid
+            guard idTextField.text == uid else {
+                self.performSegue(withIdentifier: "ruleSetting", sender: self)
+                return
+            }
+        } catch  {
+            print("firebase error")
+        }
         
         // Firebase上に登録されていれば設定画面に遷移
-        self.performSegue(withIdentifier: "ruleSetting", sender: self)
+        self.performSegue(withIdentifier: "register", sender: self)
         
     }
 }
